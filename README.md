@@ -43,7 +43,6 @@ pip install -r requirements.txt
 Create `.env` file:
 ```env
 GOOGLE_API_KEY=your_api_key_here
-GEMINI_API_URL=https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent
 ```
 
 3. **Run Analysis**
