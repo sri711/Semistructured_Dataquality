@@ -1,0 +1,23 @@
+# Semistructured Data Quality Framework
+
+## Directory Structure
+Engine/
+│
+├── agents/                       # All agents are LLM Calls with custom prompts
+│   ├── accuracy_agent.py        # Evaluates factual accuracy of content
+│   ├── completeness_agent.py    # Checks for missing information and gaps
+│   ├── consistency_agent.py     # Verifies style and terminology consistency
+│   ├── semanticoherence_agent.py # Assesses logical flow and connections
+│   ├── timeliness_agent.py      # Checks data currency and relevance
+│   └── uniqueness_agent.py      # Detects duplicate content
+│
+├── core/
+│   ├── gemini_client.py        # Google Gemini API integration
+│   └── markdown_utils.py       # Markdown text processing utilities
+│
+├── .env                        # Environment variables and API keys
+├── evaluate.py                # Agent coordination and parallel execution
+├── main.py                    # Entry point and result rendering
+├── output.txt                 # Detailed evaluation results
+├── requirements.txt           # Project dependencies
+└── sample.md                  # Example markdown document for testing
